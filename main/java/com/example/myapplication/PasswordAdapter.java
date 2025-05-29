@@ -42,9 +42,9 @@ public class PasswordAdapter extends RecyclerView.Adapter<PasswordAdapter.Passwo
 
         holder.deleteButton.setOnClickListener(v -> {
             if (listener != null) {
-                listener.onDeletePassword(passwordItem.getId()); // Уведомляем слушателя
+                listener.onDeletePassword(passwordItem.getId());
                 passwordList.remove(position);
-                notifyItemRemoved(position); // Удаляем элемент из адаптера
+                notifyItemRemoved(position);
             }
         });
     }
